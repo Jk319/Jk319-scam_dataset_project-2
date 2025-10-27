@@ -1,0 +1,4 @@
+file_id,filename,duration_sec,num_speakers,speaker_roles,source_type,recording_conditions,notes
+conv_001,audio/processed/conv_001_english.wav,4.0,2,victim|scammer,simulated,studio-placeholder,placeholder silent WAV with sample transcripts; replace with real audio
+conv_002,audio/processed/conv_002_hindi.wav,5.0,2,victim|scammer,simulated,studio-placeholder,Hindi conversation example (transcript present as json)
+conv_003,audio/processed/conv_003_hinglish.wav,6.0,2,victim|scammer,simulated,studio-placeholder,Hinglish conversation example (transcript present as json)
