@@ -2,7 +2,7 @@
 
 # Scam Call Conversation Dataset
 
-## 📌 Overview
+##  Overview
 
 This repository contains a structured dataset of **simulated scam-related telephone conversations** designed for:
 
@@ -14,11 +14,11 @@ This repository contains a structured dataset of **simulated scam-related teleph
 
 The dataset includes **Hindi**, **Hinglish**, and **English** conversations with labeled speaker roles: `victim` and `scammer`.
 
-> ⚠️ **Ethical Notice**: All audio samples included in this dataset are simulated and do *not* involve real victims or fraudulent behavior recorded from the public.
+>  **Ethical Notice**: All audio samples included in this dataset are simulated and do *not* involve real victims or fraudulent behavior recorded from the public.
 
 ---
 
-## 🗂️ Dataset Structure
+##  Dataset Structure
 
 ```
 scam_dataset_project/
@@ -35,7 +35,7 @@ scam_dataset_project/
 
 ---
 
-## 🎧 Audio Format
+##  Audio Format
 
 All processed audio files follow:
 
@@ -48,7 +48,7 @@ Raw recordings can be any format (MP3/M4A/WAV) — use `preprocess.py` to conver
 
 ---
 
-## 🗣️ Speaker Roles
+##  Speaker Roles
 
 Each transcript segment includes:
 
@@ -72,7 +72,7 @@ Each transcript segment includes:
 
 ---
 
-## 📝 Time-Aligned Transcripts
+##  Time-Aligned Transcripts
 
 Located in:
 
@@ -84,7 +84,7 @@ Each file corresponds to a single conversation.
 
 ---
 
-## 🧩 Diarization Files
+##  Diarization Files
 
 Located in:
 
@@ -96,7 +96,7 @@ They contain segment-level speaker boundaries.
 
 ---
 
-## 📊 Metadata
+##  Metadata
 
 Open `metadata.csv` to view:
 
@@ -112,7 +112,7 @@ This file enables indexing or research automation.
 
 ---
 
-## 🔧 Installation
+##  Installation
 
 ```bash
 pip install -r requirements.txt
@@ -130,7 +130,7 @@ sudo apt install ffmpeg
 
 ---
 
-## ⚙️ Usage
+##  Usage
 
 ### 1. Normalize + Convert Audio
 
@@ -156,7 +156,7 @@ transcripts/conv_001.json
 
 ---
 
-## 📥 Download Raw Audio (Google Drive)
+##  Download Raw Audio (Google Drive)
 
 Raw audio files (if large) will be available here:
 
@@ -164,7 +164,7 @@ Raw audio files (if large) will be available here:
 
 ---
 
-## ✅ Dataset Summary
+##  Dataset Summary
 
 * **Total Conversations**: 3 (expandable)
 * **Languages**: Hindi, Hinglish, English
@@ -176,7 +176,7 @@ Raw audio files (if large) will be available here:
 
 ---
 
-## 🔐 Ethics & Compliance
+##  Ethics & Compliance
 
 This dataset:
 
@@ -192,7 +192,7 @@ Any real recordings must be:
 
 ---
 
-## 🚀 Research Applications
+##  Research Applications
 
 This dataset can be used for:
 
@@ -204,7 +204,7 @@ This dataset can be used for:
 
 ---
 
-## 🔧 Tools Used
+##  Tools Used
 
 Recommended stack:
 
@@ -215,7 +215,7 @@ Recommended stack:
 
 ---
 
-## 🧑‍💻 Contributing
+##  Contributing
 
 Pull requests welcome for:
 
@@ -226,7 +226,7 @@ Pull requests welcome for:
 
 ---
 
-## 📄 License
+##  License
 
 ```
 Research/Educational Only — Not for commercial fraud or data harvesting.
@@ -236,7 +236,7 @@ Misuse strictly prohibited.
 ---
 
 
-### ⭐ If Used in Research
+###  If Used in Research
 
 Please cite the GitHub repository link.
 
