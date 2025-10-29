@@ -33,210 +33,53 @@ scam_dataset_project/
 └─ requirements.txt
 ```
 
----
-
-##  Audio Format
-
-All processed audio files follow:
-
-* **WAV** format
-* **16kHz sample rate**
-* **Mono channel**
-* Normalized amplitude
-
-Raw recordings can be any format (MP3/M4A/WAV) — use `preprocess.py` to convert.
 
 ---
 
-##  Speaker Roles
+## 🧠 Tools Used
+| Tool | Purpose |
+|------|----------|
+| FFmpeg | Audio preprocessing |
+| WhisperX | Speech-to-text + timestamps |
+| Pyannote.audio | Speaker diarization |
+| Python | Data handling, metadata generation |
 
-Each transcript segment includes:
+---
 
-* Time start (seconds)
-* Time end (seconds)
-* Speaker ID
-* Participant role (victim/scammer)
-* Content text
+## 🗣️ Language Breakdown
+| Language | Count |
+|-----------|--------|
+| Hindi-English mix | 1 |
+| English | 1 |
+| Hinglish | 1 |
 
-### Example
+---
 
+## 💬 Example Transcript
 ```json
 {
-  "start": 1.21,
-  "end": 3.90,
-  "speaker": "SPEAKER_2",
-  "role": "scammer",
-  "text": "This is bank fraud department, we detected suspicious activity."
+  "file_id": "conv_001",
+  "duration": 43.2,
+  "segments": [
+    {"start": 0.00, "end": 1.80, "speaker": "SPEAKER_1", "role": "victim", "text": "Hello?"},
+    {"start": 1.81, "end": 7.50, "speaker": "SPEAKER_2", "role": "scammer", "text": "Sir, main bank fraud department se bol raha hoon. Aapka card block hone wala hai."}
+  ]
 }
 ```
+Dataset Summary
+Total Conversations: 7
+Total Duration: ~10 minutes
+Speakers per call: 2 (scammer, victim)
+Type: Simulated (realistic speech)
 
----
+Languages: Hindi, Hinglish, English
 
-##  Time-Aligned Transcripts
+🔗 Links
+🎧 Google Drive Folder with Audio Files
 
-Located in:
+💻 GitHub Repository Link
 
-```
-transcripts/*.json
-```
+🧾 Citation
+If using this dataset for research, please cite:
 
-Each file corresponds to a single conversation.
-
----
-
-##  Diarization Files
-
-Located in:
-
-```
-diarization/*.json
-```
-
-They contain segment-level speaker boundaries.
-
----
-
-##  Metadata
-
-Open `metadata.csv` to view:
-
-* file_id
-* duration_sec
-* num_speakers
-* speaker_roles
-* source_type (simulated/public)
-* recording conditions
-* notes
-
-This file enables indexing or research automation.
-
----
-
-##  Installation
-
-```bash
-pip install -r requirements.txt
-```
-
-### Additional Dependencies
-
-* **ffmpeg** required for audio transcoding
-
-Install via:
-
-```bash
-sudo apt install ffmpeg
-```
-
----
-
-##  Usage
-
-### 1. Normalize + Convert Audio
-
-```bash
-python scripts/preprocess.py
-```
-
-### 2. Run Diarization (pyannote)
-
-Update `diarize_transcribe.py` with your HuggingFace token, then:
-
-```bash
-python scripts/diarize_transcribe.py
-```
-
-### 3. View Transcript JSON
-
-Open any file:
-
-```
-transcripts/conv_001.json
-```
-
----
-
-##  Download Raw Audio (Google Drive)
-
-Raw audio files (if large) will be available here:
-
-
-
----
-
-##  Dataset Summary
-
-* **Total Conversations**: 3 (expandable)
-* **Languages**: Hindi, Hinglish, English
-* **Speakers**: 2 per call
-* **Avg Duration**: 4–6 seconds (placeholder, replace when real audio added)
-* **Source**: Simulated scam calls created ethically
-
-> You may add additional realistic conversations by recording consenting participants.
-
----
-
-##  Ethics & Compliance
-
-This dataset:
-
-* Does **not** contain personal/private information
-* Does **not** record real victims
-* Is used strictly for **research**, **education**, and **cybersecurity awareness**
-* Complies with privacy norms
-
-Any real recordings must be:
-
-* Consent recorded
-* Anonymized (no names, card details, phone numbers)
-
----
-
-##  Research Applications
-
-This dataset can be used for:
-
-* Scam detection models
-* Language modeling
-* Fraud intent classification
-* Speaker change detection
-* Phishing call analysis
-
----
-
-##  Tools Used
-
-Recommended stack:
-
-* OpenAI Whisper (ASR)
-* Pyannote (Diarization)
-* Pydub + FFmpeg (Preprocessing)
-* Torch (Inference GPU)
-
----
-
-##  Contributing
-
-Pull requests welcome for:
-
-* Additional languages
-* Longer conversations
-* Noisy environment samples
-* Edge-case scenarios
-
----
-
-##  License
-
-```
-Research/Educational Only — Not for commercial fraud or data harvesting.
-Misuse strictly prohibited.
-```
-
----
-
-
-###  If Used in Research
-
-Please cite the GitHub repository link.
-
+“Scam Call Speech Dataset (2025).  for AI Research Internship.”
