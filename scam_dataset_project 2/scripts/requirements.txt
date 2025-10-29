@@ -1,8 +1,0 @@
-# requirements.txt
-pydub
-whisper
-openai-whisper
-pyannote.audio
-torch
-numpy
-soundfile
