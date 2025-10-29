@@ -1,0 +1,4 @@
+file_id,filename,duration_sec,num_speakers,speaker_roles,source_type,recording_conditions,notes
+conv_001,conv_001.wav,43.2,2,scammer;victim,simulated,indoor,Contains Hindi-English mix
+conv_002,conv_002.wav,38.7,2,scammer;victim,simulated,clean audio,English conversation
+conv_003,conv_003.wav,51.4,2,scammer;victim,simulated,background hum,Hinglish
